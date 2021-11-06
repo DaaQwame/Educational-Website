@@ -107,18 +107,26 @@ ul li:hover::after{
     }
 
     .hi ul{
-        padding: 30px;
+        padding: 60px;
     }
 
+   .fa-bars{
+       padding-left: 200px;
+       padding-right: 300px;
+       padding-top: 40px;
+   } 
+
     .hi{
-        position: absolute;
+        position: fixed;
         background-color: #fff;
+        overflow-x: hidden;
         height: 100vh;
         width: 200px;
         top: -4%;
-        right: -40px;
-        text-align: left;
-        z-index: 2;
+        left: -15%;
+        text-align: right;
+        z-index: 1;
+        transition: 0.5s;
     }
 }
 

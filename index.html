@@ -12,9 +12,9 @@
 
 </head>
      <header>
-          <div class="hi">
+          <div id="hi" class="hi">
               <nav>
-              <div class="menu"><i class="fas fa-bars"></i></div>
+              <div class="menu" onclick="closeNav()"><i class="fas fa-times"></i></div>
              <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
@@ -22,8 +22,9 @@
             <li><a href="blog.html">blog</a></li>
              <li><a href="contact.html">contact</a></li>
            </ul>
-         </nav>
+           </nav>
           </div>
+          <div class="menu" onclick="openNav()"><i class="fas fa-bars"></i></div>
      <div class="yh">
             <h1>EXTRA COMPUTER & PLAN INSTITUTE OF TECHNOLOGY</h1>
             <p>This institution only provide programming knowledge and skills to it people<br/>
@@ -33,15 +34,16 @@
          <a href="view.html" class="hero">VISIT US TO KNOW MORE</a>
       </div>
     </header>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".menu").click(function() {
-                $("hi").toggleClass("nav")
-            })
-        })
-    </script>
+     
+    <script>
+        function openNav() {
+            document.getElementById("hi").style.width = "250px";
+        }
 
+        function closeNav() {
+            document.getElementById("hi").style.width = "0";
+        }
+    </script>
 
     <section class="course">
         <h1>Courses We Offer</h1>
