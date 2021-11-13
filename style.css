@@ -239,6 +239,7 @@ h3{
 .user p{
     font-size: 16px;
     line-height: 30px;
+    color: #111;
 }
 
 @media(max-width: 700px) {
@@ -248,7 +249,7 @@ h3{
     }
 
     .user{
-        margin-top: -32%;
+        margin-top: -35%;
         margin-left: 13%;
     }
 
