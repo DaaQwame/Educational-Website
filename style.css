@@ -183,28 +183,80 @@ h3{
     }
 }
 
-.testimonial{
+
+
+.testimonials{
     width: 80%;
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-.testimonial-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
+.testimonials h1::after{
+    content: "";
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+    display: block;
+    margin-bottom: 10px;
+    background-color:#111;
 }
 
-.testimonial-col img{
-    height: 40px;
+.testimonials .row{
+    margin-top: 30px;
+}
+.testimonials-col{
+    margin: 40px auto;
+}
+
+.profile{
+    margin-top: 16%;
+    margin-left: 8%;
+    padding: 70px 10px 10px;
+    background-color:#efef;
+}
+
+.profile img{
+    position: absolute;
+    left: calc(50% -60px);
+    border: 10px solid white;
+}
+
+.user{
+    width: 120px;
+    margin-top: -9%;
+    margin-left: 5%;
+    height: 120px;
     border-radius: 50%;
 }
+
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #111;
+}
+
+.user p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+@media(max-width: 700px) {
+    .profile{
+        margin-top: 40%;
+        margin-left: 10%;
+    }
+
+    .user{
+        margin-top: -32%;
+        margin-left: 13%;
+    }
+
+}
+
+
+
+
 
 .campus{
     width: 80%;
