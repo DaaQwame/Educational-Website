@@ -54,9 +54,12 @@
             </div>
         </div>
         <script>
-            var submit = document.getElementById("submit");
-            submit.addEventListener("click", function() {
-                alert("You clicked me");    
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                // This will prevent the default bahaviour of a form which is posting to a server
+                event.preventDefault();
+                // You then proceed to collect the the Inputs Elements using the document.querySelector API
+                alert("You Submitted The Contact Form");
             });
         </script>
     </section>
