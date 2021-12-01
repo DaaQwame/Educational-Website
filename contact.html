@@ -46,9 +46,9 @@
             <div class="contact-col">
                 <form action="post">
                     <input type="text" id="name" placeholder="Enter your name" required>
-                    <input type="email"  placeholder="Enter your email address" required>
-                    <input type="text" placeholder="Enter your subject" required>
-                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <input type="text" id="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" id="message" placeholder="Message" required></textarea>
                     <button type="submit" id="submit" class="hero">Send Message</button>
                 </form>
             </div>
@@ -59,7 +59,12 @@
                 // This will prevent the default bahaviour of a form which is posting to a server
                 event.preventDefault();
                 // You then proceed to collect the the Inputs Elements using the document.querySelector API
-                alert("You Submitted The Contact Form");
+                const name = document.querySelector("#name").value;
+                const email = document.querySelector("#email").value;
+                const subject = document.querySelector("#subject").value;
+                const message = document.querySelector("#message").value;
+                // Show Alert for Collected Information
+                alert(`You Submitted The Contact Form with name: ${name}, email: ${email}, subject: ${subject} and message: ${message}`);
             });
         </script>
     </section>
