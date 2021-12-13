@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <section class="momo">
@@ -63,8 +63,16 @@
                 const email = document.querySelector("#email").value;
                 const subject = document.querySelector("#subject").value;
                 const message = document.querySelector("#message").value;
-                // Show Alert for Collected Information
-                alert(`You Submitted The Contact Form with name: ${name}, email: ${email}, subject: ${subject} and message: ${message}`);
+                // Send Email Message
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "username",
+                    Password : "password",
+                    To : 'them@website.com',
+                    From : "you@isp.com",
+                    Subject : "Educational Website Email",
+                    Body : `You Submitted The Contact Form with name: ${name}, email: ${email}, subject: ${subject} and message: ${message}`
+                }).then(message => alert(message));
             });
         </script>
     </section>
