@@ -66,11 +66,11 @@
                 // Send Email Message
                 Email.send({
                     SecureToken : "b1531476-c2a4-472e-a7e1-1cb3e09f8662",
-                   // Host : "",
-                   // Username : "",
-                   // Password : "",
+                   // Host : "smtp.elasticemail.com",
+                   // Username : "username",
+                   // Password : "password",
                     To : 'daaqwame@gmail.com',
-                    From : "daaqwame@gmail.com", 
+                    From : "mickeymond@gmail.com", 
                     Subject : "Educational Website Email",
                     Body : `name: ${name}, <br/> email: ${email}, <br/> subject: ${subject}, <br/> message: ${message}`
                 }).then(message => alert("mail sent successfully"));
