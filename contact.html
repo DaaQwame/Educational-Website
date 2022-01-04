@@ -65,18 +65,18 @@
                 const message = document.querySelector("#message").value;
                 // Send Email Message
                 Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "username",
-                    Password : "password",
-                    To : 'them@website.com',
-                    From : "you@isp.com",
+                    SecureToken : "b1531476-c2a4-472e-a7e1-1cb3e09f8662",
+                   // Host : "",
+                   // Username : "",
+                   // Password : "",
+                    To : 'daaqwame@gmail.com',
+                    From : "daaqwame@gmail.com", 
                     Subject : "Educational Website Email",
-                    Body : `You Submitted The Contact Form with name: ${name}, email: ${email}, subject: ${subject} and message: ${message}`
-                }).then(message => alert(message));
+                    Body : `name: ${name}, <br/> email: ${email}, <br/> subject: ${subject}, <br/> message: ${message}`
+                }).then(message => alert("mail sent successfully"));
             });
         </script>
     </section>
-
 
     <section class="footer">
         <h4>About Us</h4>
